@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponentAComponent implements OnInit {
 
+  private valueA:string="Value from A";
+
   constructor() { }
 
   ngOnInit() {
