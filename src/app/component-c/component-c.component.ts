@@ -1,12 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: 'app-component-c',
-  templateUrl: 'component-c.component.html',
-  styleUrls: ['component-c.component.css']
+  template: `
+  <p>
+    I'm component CCCC! with customValue: {{customValue}}
+  </p>`
 })
 export class ComponentCComponent implements OnInit {
+
+  @Input() customValue:string="";
 
   constructor() { }
 
